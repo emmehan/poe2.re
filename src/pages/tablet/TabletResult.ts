@@ -1,4 +1,4 @@
-import {Settings} from "@/app/settings.ts";
+import {ConcatOperator, Settings, WebSettings} from "@/app/settings.ts";
 
 /**
  * Generates tablet regex toi be pasted in PoE2
@@ -10,7 +10,7 @@ import {Settings} from "@/app/settings.ts";
  * @returns Regex as string
  *
  */
-export function generateTabletRegex(settings: Settings): string {
+export function generateTabletRegex(settings: Settings, webSettingsResult: WebSettings): string {
 
   const result = [
     generateRarityRegex(settings.tablet.rarity),
@@ -20,7 +20,16 @@ export function generateTabletRegex(settings: Settings): string {
   ].filter((e) => e !== null);
 
   if (result.length === 0) return "";
-  return result.join(" ").trim();
+
+  if(ConcatOperator.AND == webSettingsResult.concatOp) {
+    return result.join("").trim();
+  }
+  else if(ConcatOperator.OR == webSettingsResult.concatOp) {
+    return result.join("|").trim();
+  } 
+  else {
+    return "";
+  }
 }
 
 /**

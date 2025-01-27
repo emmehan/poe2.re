@@ -1,22 +1,26 @@
 import {Header} from "@/components/header/Header.tsx";
 import {Result} from "@/components/result/Result.tsx";
-import {defaultSettings, Settings} from "@/app/settings.ts";
+import {defaultSettings, Settings, defaultWebSettings, WebSettings} from "@/app/settings.ts";
 import {useEffect, useState} from "react";
-import {loadSettings, saveSettings, selectedProfile} from "@/lib/localStorage.ts";
+import {loadSettings, saveSettings, selectedProfile, loadWebSettings, saveWebSettings} from "@/lib/localStorage.ts";
 import {generateTabletRegex} from "@/pages/tablet/TabletResult.ts";
 import {Input} from "@/components/ui/input.tsx";
 import {Checked} from "@/components/checked/Checked.tsx";
 
 export function Tablet(){
   const globalSettings = loadSettings(selectedProfile())
+  const globalWebSettings = loadWebSettings()
   const [settings, setSettings] = useState<Settings["tablet"]>(globalSettings.tablet);
+  const [webSettings, setWebSettings] = useState<WebSettings>(globalWebSettings);
   const [result, setResult] = useState("");
 
   useEffect(() => {
     const settingsResult = {...globalSettings, tablet: {...settings}};
+    const webSettingsResult = {...globalWebSettings, ...webSettings};
     saveSettings(settingsResult);
-    setResult(generateTabletRegex(settingsResult));
-  }, [settings]);
+    saveWebSettings(webSettingsResult);
+    setResult(generateTabletRegex(settingsResult, webSettingsResult));
+  }, [settings, webSettings]);
 
   return (
     <>
@@ -24,7 +28,10 @@ export function Tablet(){
       <div className="flex bg-muted grow-0 flex-1 flex-col gap-2 ">
         <Result
           result={result}
-          reset={() => setSettings(defaultSettings.tablet)}
+          reset={() => {
+            setSettings(defaultSettings.tablet);
+            setWebSettings(defaultWebSettings);
+          }}
           customText={settings.resultSettings.customText}
           autoCopy={settings.resultSettings.autoCopy}
           setCustomText={(text) => {
@@ -35,6 +42,12 @@ export function Tablet(){
           setAutoCopy={(enable) => {
             setSettings({
               ...settings, resultSettings: {...settings.resultSettings, autoCopy: enable,}
+            })
+          }}
+          concatOp={webSettings.concatOp}
+          setConcatOperation={(op) => {
+            setWebSettings({
+              ...webSettings, concatOp: op
             })
           }}
         />

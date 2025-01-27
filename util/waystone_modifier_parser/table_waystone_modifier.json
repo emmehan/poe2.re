@@ -1,0 +1,1125 @@
+[
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(10–15)% increased Quantity of Items found in this Area",
+            "(18–24)% increased Rarity of Items found in this Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(16–24)% increased Quantity of Items found in this Area",
+            "(25–33)% increased Rarity of Items found in this Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(25–29)% increased Quantity of Items found in this Area",
+            "(34–49)% increased Rarity of Items found in this Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(55–75)% increased Rarity of Items found in this Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(76–100)% increased Rarity of Items found in this Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(101–150)% increased Rarity of Items found in this Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(55–75)% increased Gold found in this Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(76–100)% increased Gold found in this Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(101–150)% increased Gold found in this Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(25–34)% increased Experience gain"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(35–40)% increased Experience gain"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(21–30)% increased Pack size"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(31–40)% increased Pack size"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(41–50)% increased Pack size"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(25–28)% increased number of Monster Packs"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(29–35)% increased number of Monster Packs"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(60–100)% increased amount of Chests"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(35–49)% increased Magic Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(50–79)% increased Magic Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(80–100)% increased Magic Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(25–34)% increased number of Rare Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(35–54)% increased number of Rare Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(55–65)% increased number of Rare Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(17–24)% increased Magic Monsters",
+            "(17–24)% increased number of Rare Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(25–39)% increased Magic Monsters",
+            "(25–39)% increased number of Rare Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(40–50)% increased Magic Monsters",
+            "(40–50)% increased number of Rare Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(30–49)% increased amount of Magic Chests"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(50–79)% increased amount of Magic Chests"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(80–100)% increased amount of Magic Chests"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(25–34)% increased amount of Rare Chests"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(35–54)% increased amount of Rare Chests"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(55–65)% increased amount of Rare Chests"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(35–49)% increased Magic Pack Size"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(50–79)% increased Magic Pack Size"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "(80–100)% increased Magic Pack Size"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            ""
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Rare Monsters have 1 additional Modifier"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains an additional Shrine"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains an additional Strongbox"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains an additional Essence"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (8–12) additional packs of Undead"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (13–16) additional packs of Undead"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (17–20) additional packs of Undead"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (8–12) additional packs of Beasts"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (13–16) additional packs of Beasts"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (17–20) additional packs of Beasts"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (8–12) additional packs of Ezomyte Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (13–16) additional packs of Ezomyte Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (17–20) additional packs of Ezomyte Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (8–12) additional packs of Faridun Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (13–16) additional packs of Faridun Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (17–20) additional packs of Faridun Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (8–12) additional packs of Vaal Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (13–16) additional packs of Vaal Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (17–20) additional packs of Vaal Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (8–12) additional packs of Iron Guards"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (13–16) additional packs of Iron Guards"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (17–20) additional packs of Iron Guards"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (8–12) additional packs of Plagued Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (13–16) additional packs of Plagued Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (17–20) additional packs of Plagued Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (8–12) additional packs of Transcended Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (13–16) additional packs of Transcended Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (17–20) additional packs of Transcended Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (8–12) additional packs of Bramble Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (13–16) additional packs of Bramble Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Prefix",
+        "Description": [
+            "Area contains (17–20) additional packs of Bramble Monsters"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters deal (26–30)% of Damage as Extra Fire",
+            "95% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters deal (31–35)% of Damage as Extra Fire",
+            "95% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters deal (36–40)% of Damage as Extra Fire",
+            "95% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters deal (26–30)% of Damage as Extra Cold",
+            "95% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters deal (31–35)% of Damage as Extra Cold",
+            "95% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters deal (36–40)% of Damage as Extra Cold",
+            "95% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters deal (26–30)% of Damage as Extra Lightning",
+            "95% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters deal (31–35)% of Damage as Extra Lightning",
+            "95% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters deal (36–40)% of Damage as Extra Lightning",
+            "95% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "(26–30)% increased Monster Damage",
+            "125% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "(31–35)% increased Monster Damage",
+            "125% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "(36–40)% increased Monster Damage",
+            "125% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "(16–20)% increased Monster Movement Speed",
+            "(21–25)% increased Monster Attack Speed",
+            "(21–25)% increased Monster Cast Speed",
+            "125% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "(21–25)% increased Monster Movement Speed",
+            "(26–30)% increased Monster Attack Speed",
+            "(26–30)% increased Monster Cast Speed",
+            "125% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "(26–30)% increased Monster Movement Speed",
+            "(31–35)% increased Monster Attack Speed",
+            "(31–35)% increased Monster Cast Speed",
+            "125% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have (160–200)% increased Critical Hit Chance",
+            "+(31–35)% to Monster Critical Damage Bonus",
+            "100% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have (260–300)% increased Critical Hit Chance",
+            "+(36–40)% to Monster Critical Damage Bonus",
+            "100% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have (360–400)% increased Critical Hit Chance",
+            "+(41–45)% to Monster Critical Damage Bonus",
+            "100% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "(30–39)% more Monster Life",
+            "90% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "(50–59)% more Monster Life",
+            "90% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "(70–79)% more Monster Life",
+            "90% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "+30% Monster Elemental Resistances",
+            "90% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "+40% Monster Elemental Resistances",
+            "90% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "+50% Monster Elemental Resistances",
+            "90% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters are Armoured",
+            "70% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters are Evasive",
+            "70% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters gain 25% of Maximum Life as Extra Maximum Energy Shield",
+            "70% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have 40% chance to Poison on Hit",
+            "90% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have 25% chance to Bleed on Hit",
+            "90% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have (50–59)% increased Ailment Threshold",
+            "Monsters have (50–59)% increased Stun Threshold",
+            "85% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have (70–79)% increased Ailment Threshold",
+            "Monsters have (70–79)% increased Stun Threshold",
+            "85% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have (90–99)% increased Ailment Threshold",
+            "Monsters have (90–99)% increased Stun Threshold",
+            "85% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters Break Armour equal to 20% of Physical Damage dealt",
+            "75% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters Break Armour equal to 35% of Physical Damage dealt",
+            "75% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters Break Armour equal to 50% of Physical Damage dealt",
+            "75% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have 30% increased Accuracy Rating",
+            "75% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have 40% increased Accuracy Rating",
+            "75% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have 50% increased Accuracy Rating",
+            "75% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters deal (26–30)% of Damage as Extra Chaos",
+            "75% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters deal (31–35)% of Damage as Extra Chaos",
+            "75% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters deal (36–40)% of Damage as Extra Chaos",
+            "75% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have 100% increased Stun Buildup",
+            "95% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have 150% increased Stun Buildup",
+            "95% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have 200% increased Stun Buildup",
+            "95% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have 100% increased Freeze Buildup",
+            "Monsters have 100% increased Ignite Chance",
+            "Monsters have 100% increased Shock Chance",
+            "100% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have 150% increased Freeze Buildup",
+            "Monsters have 150% increased Ignite Chance",
+            "Monsters have 150% increased Shock Chance",
+            "100% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have 200% increased Freeze Buildup",
+            "Monsters have 200% increased Ignite Chance",
+            "Monsters have 200% increased Shock Chance",
+            "100% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters fire 2 additional Projectiles",
+            "110% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have 50% increased Area of Effect",
+            "110% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Players are Cursed with Enfeeble",
+            "100% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Players are Cursed with Temporal Chains",
+            "100% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Players are Cursed with Elemental Weakness",
+            "100% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Area has patches of Burning Ground",
+            "80% increased Waystones found in Area",
+            "map ground effect patches per 100 tiles [18]",
+            "map ground effect radius [14]"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Area has patches of Chilled Ground",
+            "80% increased Waystones found in Area",
+            "map ground effect patches per 100 tiles [18]",
+            "map ground effect radius [14]"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Area has patches of Chilled Ground",
+            "80% increased Waystones found in Area",
+            "map ground effect patches per 100 tiles [22]",
+            "map ground effect radius [16]"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Area has patches of Chilled Ground",
+            "80% increased Waystones found in Area",
+            "map ground effect patches per 100 tiles [26]",
+            "map ground effect radius [18]"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Area has patches of Shocked Ground",
+            "80% increased Waystones found in Area",
+            "map ground effect patches per 100 tiles [18]",
+            "map ground effect radius [14]"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Area has patches of Shocked Ground",
+            "80% increased Waystones found in Area",
+            "map ground effect patches per 100 tiles [22]",
+            "map ground effect radius [16]"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Area has patches of Shocked Ground",
+            "80% increased Waystones found in Area",
+            "map ground effect patches per 100 tiles [26]",
+            "map ground effect radius [18]"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monster Damage Penetrates 15% Elemental Resistances",
+            "120% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monster Damage Penetrates 20% Elemental Resistances",
+            "120% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monster Damage Penetrates 25% Elemental Resistances",
+            "120% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "(-15–-10)% maximum Player Resistances",
+            "125% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Players gain 30% reduced Flask Charges",
+            "120% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Players gain 40% reduced Flask Charges",
+            "120% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Players gain 50% reduced Flask Charges",
+            "120% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Players have 40% less Recovery Rate of Life and Energy Shield",
+            "125% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Players have 50% less Recovery Rate of Life and Energy Shield",
+            "125% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Players have 60% less Recovery Rate of Life and Energy Shield",
+            "125% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Players have 30% less Cooldown Recovery Rate",
+            "110% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Players have 40% less Cooldown Recovery Rate",
+            "110% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Players have 50% less Cooldown Recovery Rate",
+            "110% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters take (26–30)% reduced Extra Damage from Critical Hits",
+            "80% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters take (31–35)% reduced Extra Damage from Critical Hits",
+            "80% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters take (36–40)% reduced Extra Damage from Critical Hits",
+            "80% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "75% less effect of Curses on Monsters",
+            "70% increased Waystones found in Area"
+        ]
+    },
+    {
+        "Level": "1",
+        "Pre/Suf": "Suffix",
+        "Description": [
+            "Monsters have 25% chance to steal Power, Frenzy and Endurance charges on Hit",
+            "70% increased Waystones found in Area"
+        ]
+    }
+]

@@ -1,4 +1,4 @@
-import {defaultSettings, defaultWebSettings, Settings, WebSettings} from "@/app/settings.ts";
+import {defaultSettings, Settings, defaultWebSettings, WebSettings} from "@/app/settings.ts";
 
 
 export function merge(a: any, b: any): any {

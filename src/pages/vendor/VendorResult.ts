@@ -1,9 +1,11 @@
-import {Settings} from "@/app/settings.ts";
+import {ConcatOperator, Settings, WebSettings} from "@/app/settings.ts";
+import toRegexRange from "to-regex-range";
 
-export function generateVendorRegex(settings: Settings): string {
+export function generateVendorRegex(settings: Settings, webSettings: WebSettings): string {
   const terms = [
     ...itemProperty(settings.vendor.itemProperty),
     itemType(settings.vendor.itemType),
+    itemLevel(settings.vendor.itemLevel),
     resistances(settings.vendor.resistances),
     movement(settings.vendor.movementSpeed),
     ...itemMods(settings.vendor.itemMods),
@@ -11,7 +13,16 @@ export function generateVendorRegex(settings: Settings): string {
     itemClass(settings.vendor.itemClass),
   ].filter((e) => e !== null && e !== "")
 
-  return terms.length > 0 ? `"${terms.join("|")}"` : "";
+  if(webSettings.concatOp == ConcatOperator.OR) {
+    return terms.length > 0 ? `"${terms.join("|")}"` : "";
+  }
+  else if(webSettings.concatOp == ConcatOperator.AND)
+  {
+    return terms.length > 0 ? (terms.map((term) => {return "\"" + term + "\"";})).join("") : "";
+  }
+  else {
+    return "";
+  }
 }
 
 
@@ -32,6 +43,22 @@ function itemType(settings: Settings["vendor"]["itemType"]): string | null {
   if (types.length === 0 || types.length === 3) return null;
   if (types.length > 1) return `y: (${types.join("|")})`
   return `y: ${types.join("|")}`;
+}
+
+function itemLevel(settings: Settings["vendor"]["itemLevel"]): string | null {
+  const loLimit = settings.loLimitItemLevel;
+  const hiLimit = settings.hiLimitItemLevel;
+
+  if( loLimit <= 0 || hiLimit <= 0 ||
+      loLimit >= settings.maxItemLevel ||
+      hiLimit > settings.maxItemLevel ||
+      loLimit > hiLimit ||
+      (loLimit <= 1 && hiLimit >= settings.maxItemLevel)) {
+    return null;
+  }
+
+  const regex = toRegexRange(loLimit, hiLimit, { capture: false, shorthand: true, relaxZeros: true });
+  return `el: ${regex}`;
 }
 
 function resistances(settings: Settings["vendor"]["resistances"]): string | null {

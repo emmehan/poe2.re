@@ -1,39 +1,57 @@
-import {Settings} from "@/app/settings.ts";
+import {ConcatOperator, Settings, WebSettings} from "@/app/settings.ts";
+import toRegexRange from "to-regex-range";
 
-export function generateWaystoneRegex(settings: Settings): string {
+export function generateWaystoneRegex(settings: Settings, webSettings: WebSettings): string {
 
   const result = [
     generateTierRegex(settings.waystone.tier),
     generateModifiers(settings.waystone.modifier),
+    generateDropChanceRegex(settings.waystone.modifier.dropChance),
     settings.waystone.resultSettings.customText || null,
-  ].filter((e) => e !== null);
+  ].filter((e) => e !== null && e!== "");
 
-  if (result.length === 0) return "";
-  return result.join(" ").trim();
+  if(webSettings.concatOp == ConcatOperator.OR) {
+    return result.length > 0 ? `"${result.join("|")}"` : "";
+  }
+  else if(webSettings.concatOp == ConcatOperator.AND)
+  {
+    return result.length > 0 ? (result.map((result) => {return "\"" + result + "\"";})).join("") : "";
+  }
+  else {
+    return "";
+  }
 }
 
+function generateDropChanceRegex(settings: Settings["waystone"]["modifier"]["dropChance"]): string | null {
+  const loLimit = settings.loLimitDropChance;
+  const hiLimit = settings.hiLimitDropChance;
+
+  if( loLimit <= 0 || hiLimit <= 0 ||
+      loLimit >= settings.maxDropChance ||
+      hiLimit > settings.maxDropChance ||
+      loLimit > hiLimit ||
+      (loLimit <= 1 && hiLimit >= settings.maxDropChance)) {
+    return null;
+  }
+
+  const regex = toRegexRange(loLimit, hiLimit, { capture: false, shorthand: true, relaxZeros: true });
+  return `nce: \\+${regex}`;
+}
 
 function generateTierRegex(settings: Settings["waystone"]["tier"]): string | null {
-  if (settings.max === 0 && settings.min === 0) return null
-  if (settings.max !== 0 && settings.min > settings.max) return null;
-  if (settings.min < 1 || settings.max < 1) return null;
-  if (settings.min <= 1 && settings.max === 16) return null;
+  const loLimit = settings.loLimitTier;
+  const hiLimit = settings.hiLimitTier;
 
-  const max = settings.max === 0 ? 16 : settings.max;
-  const min = settings.min;
+  if( loLimit <= 0 || hiLimit <= 0 ||
+      loLimit >= settings.maxTier ||
+      hiLimit > settings.maxTier ||
+      loLimit > hiLimit ||
+      (loLimit <= 1 && hiLimit >= settings.maxTier)) {
+    return null;
+  }
 
-  const numbersUnder10 = range(min, Math.min(10, max + 1));
-  const numbersOver10 = range(Math.max(10, min), max + 1);
-
-  const regexUnder10 = numbersUnder10.length <= 1 ? `${numbersUnder10.join("")}` :
-    numbersUnder10.length > 2 ? `[${numbersUnder10[0]}-${numbersUnder10[numbersUnder10.length - 1]}]` : `[${numbersUnder10.join("")}]`;
-
-  const regexOver10 = numbersOver10.length <= 1 ? `${numbersOver10.join("")}` : `1[${numbersOver10.map((e) => e.toString()[1]).join("")}]`;
-
-  const under10 = regexUnder10 === "" ? "" : `r ${regexUnder10}\\)`
-  const over10 = regexOver10 === "" ? "" : `${regexOver10}\\)`
-  const result = [under10, over10].filter((e) => e !== "").join("|");
-  return result === "" ? "" : `"${result}"`
+  const regex = toRegexRange(loLimit, hiLimit, { capture: true, shorthand: true, relaxZeros: true });
+  return `er: ${regex}`;
 }
 
 function generateModifiers(settings: Settings["waystone"]["modifier"]): string | null {
@@ -59,13 +77,7 @@ function generateModifiers(settings: Settings["waystone"]["modifier"]): string |
   ].filter((e) => e !== null).join("|");
 
   return [
-    goodMods.length > 0 ? `"${goodMods}"` : null,
-    badMods.length > 0 ? `"!${badMods}"` : null,
-  ].join(" ");
+    goodMods.length > 0 ? `${goodMods}` : null,
+    badMods.length > 0 ? `!${badMods}` : null,
+  ].filter((e) => e !== null).join(" ");
 }
-
-function range(start: number, end: number): number[] {
-  if (end - start <= 0) return [];
-  return [...Array((end - start)).keys()].map(i => i + start);
-}
-

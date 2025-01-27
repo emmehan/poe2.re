@@ -1,11 +1,18 @@
+export enum ConcatOperator{
+  AND,
+  OR,
+}
+
 export interface WebSettings {
-  sidebarOpen: boolean
-  optionsOpen: boolean
+  sidebarOpen: boolean,
+  optionsOpen: boolean,
+  concatOp: ConcatOperator,
 }
 
 export const defaultWebSettings: WebSettings = {
   sidebarOpen: true,
   optionsOpen: true,
+  concatOp: ConcatOperator.OR,
 }
 
 export interface ResultSettings {
@@ -21,6 +28,11 @@ export interface Settings {
       rare: boolean,
       magic: boolean,
       normal: boolean,
+    },
+    itemLevel: {
+      loLimitItemLevel: number,
+      hiLimitItemLevel: number,
+      maxItemLevel: number,
     }
     itemProperty: {
       quality: boolean,
@@ -74,10 +86,16 @@ export interface Settings {
   waystone: {
     resultSettings: ResultSettings,
     tier: {
-      min: number,
-      max: number,
+      loLimitTier: number,
+      hiLimitTier: number,
+      maxTier: number,
     },
     modifier: {
+      dropChance: {
+        loLimitDropChance: number,
+        hiLimitDropChance: number,
+        maxDropChance: number,
+      }
       dropOver200: boolean,
       quant50: boolean,
       rarity50: boolean,
@@ -111,6 +129,11 @@ export const defaultSettings: Settings = {
       rare: false,
       magic: false,
       normal: false,
+    },
+    itemLevel: {
+      loLimitItemLevel: 1,
+      hiLimitItemLevel: 99,
+      maxItemLevel: 99,
     },
     itemProperty: {
       quality: false,
@@ -164,10 +187,16 @@ export const defaultSettings: Settings = {
   waystone: {
     resultSettings: defaultResultSettings,
     tier: {
-      min: 1,
-      max: 16,
+      loLimitTier: 1,
+      hiLimitTier: 16,
+      maxTier: 16,
     },
     modifier: {
+      dropChance: {
+        loLimitDropChance: 1,
+        hiLimitDropChance: 999,
+        maxDropChance: 999
+      },
       dropOver200: false,
       quant50: false,
       rarity50: false,

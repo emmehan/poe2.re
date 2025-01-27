@@ -1,22 +1,27 @@
 import {Header} from "@/components/header/Header.tsx";
 import {Result} from "@/components/result/Result.tsx";
 import {Checked} from "@/components/checked/Checked.tsx";
-import {loadSettings, saveSettings, selectedProfile} from "@/lib/localStorage.ts";
+import {Input} from "@/components/ui/input.tsx";
+import {loadSettings, loadWebSettings, saveSettings, selectedProfile, saveWebSettings} from "@/lib/localStorage.ts";
 import {useEffect, useState} from "react";
-import {defaultSettings, Settings} from "@/app/settings.ts";
+import {defaultSettings, Settings, defaultWebSettings, WebSettings} from "@/app/settings.ts";
 import {generateVendorRegex} from "@/pages/vendor/VendorResult.ts";
 
 export function Vendor() {
 
   const globalSettings = loadSettings(selectedProfile())
+  const globalWebSettings = loadWebSettings()
   const [settings, setSettings] = useState<Settings["vendor"]>(globalSettings.vendor);
+  const [webSettings, setWebSettings] = useState<WebSettings>(globalWebSettings);
   const [result, setResult] = useState("");
 
   useEffect(() => {
     const settingsResult = {...globalSettings, vendor: {...settings}};
+    const webSettingsResult = {...webSettings, vendor: {...settings}};
     saveSettings(settingsResult);
-    setResult(generateVendorRegex(settingsResult));
-  }, [settings]);
+    saveWebSettings(webSettingsResult);
+    setResult(generateVendorRegex(settingsResult, webSettings));
+  }, [settings, webSettings]);
 
   return (
     <>
@@ -24,7 +29,10 @@ export function Vendor() {
       <div className="flex bg-muted grow-0 flex-1 flex-col gap-2 ">
         <Result
           result={result}
-          reset={() => setSettings(defaultSettings.vendor)}
+          reset={() => {
+            setSettings(defaultSettings.vendor);
+            setWebSettings(defaultWebSettings);
+          }}
           customText={settings.resultSettings.customText}
           autoCopy={settings.resultSettings.autoCopy}
           setCustomText={(text) => {
@@ -35,6 +43,12 @@ export function Vendor() {
           setAutoCopy={(enable) => {
             setSettings({
               ...settings, resultSettings: {...settings.resultSettings, autoCopy: enable,}
+            })
+          }}
+          concatOp={webSettings.concatOp}
+          setConcatOperation={(op) => {
+            setWebSettings({
+              ...webSettings, concatOp: op
             })
           }}
 
@@ -80,6 +94,28 @@ export function Vendor() {
                      onChange={(b) => setSettings({
                        ...settings, movementSpeed: {...settings.movementSpeed, move10: b}
                      })}
+            />
+
+          <p className="text-xs font-medium text-sidebar-foreground/70 pb-2 pt-4">Item level (max. {settings.itemLevel.maxItemLevel})</p>
+            <Input type="number" min="1" max={settings.itemLevel.maxItemLevel} placeholder="Min item level" className="pb-2 mb-2 w-40"
+                  value={settings.itemLevel.loLimitItemLevel}
+                  onChange={(b) => {
+                    if(Number(b.target.value) <= settings.itemLevel.hiLimitItemLevel && Number(b.target.value) < settings.itemLevel.maxItemLevel) { 
+                      setSettings({
+                        ...settings, itemLevel: {...settings.itemLevel, loLimitItemLevel: Number(b.target.value) || 1}
+                      })
+                    }
+                  }}
+            />
+            <Input type="number" min="1" max={settings.itemLevel.maxItemLevel} placeholder="Max item level" className="pb-2 mb-2 w-40"
+                  value={settings.itemLevel.hiLimitItemLevel}
+                  onChange={(b) => {
+                    if(Number(b.target.value) >= settings.itemLevel.loLimitItemLevel && Number(b.target.value) <= settings.itemLevel.maxItemLevel) { 
+                      setSettings({
+                        ...settings, itemLevel: {...settings.itemLevel, hiLimitItemLevel: Number(b.target.value) || settings.itemLevel.maxItemLevel}
+                      })
+                    }
+                  }}
             />
           </div>
           <div>

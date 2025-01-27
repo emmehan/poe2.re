@@ -10,6 +10,7 @@ import {Separator} from "@/components/ui/separator.tsx";
 import {Input} from "@/components/ui/input.tsx";
 import {loadWebSettings, saveWebSettings} from "@/lib/localStorage.ts";
 import {cx} from "class-variance-authority";
+import { ConcatOperator } from "@/app/settings";
 
 export interface ResultProps {
   result: string
@@ -19,10 +20,12 @@ export interface ResultProps {
   setCustomText: (text: string) => void
   autoCopy: boolean
   setAutoCopy: (enable: boolean) => void
+  concatOp: ConcatOperator
+  setConcatOperation: (op: ConcatOperator) => void
 }
 
 export function Result(props: ResultProps) {
-  const {result, maxLength, reset, customText, setCustomText, autoCopy, setAutoCopy} = props;
+  const {result, maxLength, reset, customText, setCustomText, autoCopy, setAutoCopy, concatOp, setConcatOperation,} = props;
 
   const webSettings = loadWebSettings();
   const currentLength = result.length
@@ -37,8 +40,8 @@ export function Result(props: ResultProps) {
   }, [result, autoCopy]);
 
   useEffect(() => {
-    saveWebSettings({...webSettings, optionsOpen: showOptions})
-  }, [showOptions]);
+    saveWebSettings({...webSettings, optionsOpen: showOptions, concatOp: concatOp})
+  }, [showOptions, concatOp]);
 
   console.log(copied === result);
 
@@ -105,6 +108,39 @@ export function Result(props: ResultProps) {
                  value={customText}
                  onChange={(e) => setCustomText(e.target.value)}
           />
+        </div>
+        <Separator orientation="vertical" className="mr-2 h-4"/>
+        <div className="flex  max-w-sm items-center space-x-2">
+          <label
+            htmlFor="terms"
+            className="text-sm cursor-pointer font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          >
+            Operation
+          </label>
+          <Input type="radio" id="html" name="fav_language" value="AND" defaultChecked 
+            onChange={() => {
+              setConcatOperation(ConcatOperator.AND);
+              console.log("switch to AND");
+            }}
+          />
+          <label
+            htmlFor="terms"
+            className="text-sm cursor-pointer font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          >
+            AND
+          </label>
+          <Input type="radio" id="css" name="fav_language" value="OR" 
+            onChange={() => {
+              setConcatOperation(ConcatOperator.OR);
+              console.log("switch to OR");
+            }}
+          />
+          <label
+            htmlFor="terms"
+            className="text-sm cursor-pointer font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          >
+            OR
+          </label>
         </div>
       </div>
     </>
